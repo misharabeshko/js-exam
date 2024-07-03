@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/news.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/pagination.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="news.html" class="nav-link">Новини</a>
+            <a href="weather.html" class="nav-link">Погода</a>
+            <a href="gallery.html" class="nav-link">Галерея</a>
+        </div>
+        <div class="nav-right">
+            <button id="logout-button" class="nav-button">Вийти</button>
+        </div>
+    </nav>
+
+
+
+
+    <div class="container">
+        <h1>Останні новини</h1>
+        <div class="country-input">
+            <input type="text" id="country-code" placeholder="Введіть код країни">
+            <button id="fetch-news">Отримати новини</button>
+        </div>
+
+        <div id="news-container" class="news-container"></div>
+
+    </div>
+
+
+
+    <div id="pagesContainer" class="pagination">
+        <button id="back" class="back">&lt;</button>
+
+        <div id="pages">
+
+        </div>
+
+        <button id="next" class="next">&gt;</button>
+    </div>
+
+
+    <script src="js/news.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>

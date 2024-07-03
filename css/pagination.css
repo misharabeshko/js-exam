@@ -1,0 +1,51 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.back,
+.next {
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+
+.page-button,
+.ellipsis {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background: none;
+    font-size: 16px;
+}
+
+.page-button {
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-button:hover,
+.back:hover,
+.next:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.page-button.active {
+    font-weight: bold;
+    background-color: #283593;
+    color: #fff;
+}
+
+.ellipsis {
+    padding: 0 10px;
+    font-size: 18px;
+    color: #333;
+}

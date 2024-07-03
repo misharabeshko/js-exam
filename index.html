@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container active" id="login-form-container">
+            <h2>Вхід</h2>
+            <form id="login-form">
+                <label for="login-email">Електронна пошта:</label>
+                <input type="email" id="login-email" name="login-email" required>
+
+                <div id="error-email-login"></div>
+
+                <label for="login-password">Пароль:</label>
+                <input type="password" id="login-password" name="login-password" required>
+
+                <div id="error-password-login"></div>
+
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Запам'ятати мене</label>
+                </div>
+                <button type="submit">Увійти</button>
+            </form>
+            <p>Немає аккаунту? <a href="#" id="show-register-form">Зареєструватися</a></p>
+        </div>
+
+        <div class="form-container" id="register-form-container" style="display: none">
+            <h2>Реєстрація</h2>
+            <form id="register-form">
+                <label for="register-username">Ім'я користувача:</label>
+                <input type="text" id="register-username" name="register-username" required>
+                <label for="register-email">Електронна пошта:</label>
+                <input type="email" id="register-email" name="register-email" required>
+                <div id="error-email-register"></div>
+
+
+                <label for="register-password">Пароль:</label>
+                <input type="password" id="register-password" name="register-password" minlength="6" required>
+                <label for="confirm-password">Підтвердження пароля:</label>
+                <input type="password" id="confirm-password" name="confirm-password" minlength="6" required>
+
+                <div id="error-password-register"></div>
+
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me-register">
+                    <label for="remember-me-register">Запам'ятати мене</label>
+                </div>
+                <button type="submit">Зареєструватися</button>
+            </form>
+            <p>Вже є аккаунт? <a href="#" id="show-login-form">Увійти</a></p>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
